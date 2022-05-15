@@ -12,11 +12,11 @@ function ExpenseDate(props) {
     return (
       <>
 
-    <div class="expense-date"> 
+    <div className="expense-date"> 
 
-            <div class="expense-date__month">{month}</div>
-            <div class="expense-date__year">{year}</div>
-            <div class="expens-date__day">{day}</div>
+            <div className="expense-date__month">{month}</div>
+            <div className="expense-date__year">{year}</div>
+            <div className="expens-date__day">{day}</div>
             
            
 </div>
