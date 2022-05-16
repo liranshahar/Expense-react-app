@@ -1,5 +1,8 @@
+
 // import ExpenseItem from "./components/ExpenseItem";
 import Expense from "./components/Expenses/Expense";
+import NewExpense from "./components/NewExpense/NewExpense";
+
 
 
 function App(props) {
@@ -31,7 +34,7 @@ function App(props) {
 
   return (
 <>
-    <h2>Let's get started!</h2>   
+   <NewExpense/>
    <Expense items ={expenses} />
 
 
