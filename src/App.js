@@ -32,9 +32,17 @@ function App(props) {
     },
   ];
 
+  const newExpenseHandler = (enteredNewExpense) => {
+    
+
+    console.log(enteredNewExpense);
+
+};
+
+
   return (
 <>
-   <NewExpense/>
+   <NewExpense onGetNewExpense = {newExpenseHandler}/>
    <Expense items ={expenses} />
 
 
