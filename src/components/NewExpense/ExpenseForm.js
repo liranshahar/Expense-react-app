@@ -63,7 +63,8 @@ const [enteredDate, setEntereddate] = useState('');
 
         </div>
         <div className="new-expense__actions">
-        <button type = "submit">Add Expense</button>
+        <button type = "button" onClick={props.onCancel}>Cancel</button>
+        <button type = "submit"  onClick={props.onCancel}>Add Expense</button>
         </div>
 
 
