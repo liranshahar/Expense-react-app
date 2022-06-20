@@ -24,13 +24,16 @@ const [enteredDate, setEntereddate] = useState('');
   const submitHandler = (event) =>{
     event.preventDefault();
 
+   
     const expensData = {
 
       title : enteredTitle,
-      amount : enteredAmount,
+      amount : +enteredAmount,
       date :  new Date(enteredDate)  
 
     }
+
+    console.log(expensData);
 
     props.onSaveExpenseData(expensData);
     setEnteredtitle("");
@@ -64,7 +67,7 @@ const [enteredDate, setEntereddate] = useState('');
         </div>
         <div className="new-expense__actions">
         <button type = "button" onClick={props.onCancel}>Cancel</button>
-        <button type = "submit"  onClick={props.onCancel}>Add Expense</button>
+        <button type = "submit" >Add Expense</button>
         </div>
 
 
